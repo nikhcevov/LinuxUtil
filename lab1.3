@@ -1,0 +1,15 @@
+#!/bin/bash
+
+sum=""
+read line
+sum="$sum$line"
+
+while [[ "$line" != "q" ]]
+do 
+read line
+sum="$sum$line"
+if [[ "$line" == "q" ]]
+then break
+fi
+done
+echo "$sum"

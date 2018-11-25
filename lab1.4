@@ -1,0 +1,12 @@
+#!/bin/bash
+count=1
+read digit
+while [[ "$digit"%2 != 0 ]]
+do read digit
+let count=$count+1
+let m=$digit%2
+if [[ "$m" == "0" ]]
+then break
+fi
+done
+echo "$count"

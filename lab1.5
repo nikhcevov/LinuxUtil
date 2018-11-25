@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Press to run: "
+echo "1: nano"
+echo "2: vim"
+echo "3: links"
+echo "4 for quit"
+read line
+case $line in
+1 )
+/usr/bin/nano
+;;
+2 )
+/usr/bin/vi
+;;
+3 )
+/usr/bin/links
+;;
+4 )
+exit 0
+;;
+esac 
