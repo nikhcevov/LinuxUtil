@@ -1,0 +1,24 @@
+#!/bin/bash
+echo $$ > lab4.6_PID
+echo "RUNNING"
+i=0
+mode='0'
+sigterm()
+{
+mode='1'
+}
+trap 'sigterm' SIGTERM
+while true
+do
+case $mode in
+0)
+echo $i
+let i=$i+1
+;;
+1)
+echo "STOP"
+exit
+;;
+esac
+sleep 1
+done

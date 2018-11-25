@@ -1,0 +1,13 @@
+#!/bin/bash
+./lab4.6_handler&
+while true
+do
+read line
+case $line in
+"term")
+echo "SEND TERM"
+kill -SIGTERM $(cat lab4.6_PID)
+exit
+;;
+esac
+done

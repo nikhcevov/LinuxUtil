@@ -1,0 +1,51 @@
+#!/bin/bash
+homeFolder=/home/user
+restFile=/home/user/lab5/$1
+#find file in trash folder
+for i in $(grep -h $1 $homeFolder/trash.log)
+do
+#parse log file name and get 1.file name and 2.name in trash
+glPath=$(echo $i | awk -F ":" '{print $1}')
+trFile=$(echo $i | awk -F ":" '{print $2}') 
+
+if [[ $restFile == $glPath ]]
+then
+
+rmFile=$homeFolder/.trash/$trFile
+
+if [ $# -ne 1 ]; then
+	echo "usage: `basename $0` file" 1>&2
+	exit 1
+fi
+
+if [ -e $rmFile ];
+then
+echo "Do you want to restore file - $glPath ?"
+read answer
+if [[ $answer == "yes" ]]
+then
+	if [ -d $(dirname $glPath) ]
+	then
+		if [[ -e $glPath ]]
+		then
+			#restore wit new name
+			echo "File already exist! Choose new name: "
+			read newName
+			ln "$rmFile" "$(dirname $glPath)/$newName"
+		else
+			#restore with old name
+			ln $rmFile $glPath
+		fi
+	else
+		#folder not exist anymore
+		echo "$(dirname $glPath) has been removed!"
+		ln $rmFile $homeFolder/$1
+	fi
+	#remove file from trash folder and override log file
+	rm $rmFile
+	grep -v $trFile $homeFolder/trash.log > $homeFolder/trash0.log
+	mv $homeFolder/trash0.log $homeFolder/trash.log
+fi
+fi
+fi
+done

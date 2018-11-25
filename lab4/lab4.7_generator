@@ -1,0 +1,18 @@
+#!/bin/bash
+./lab4.7_handler&
+while true
+do
+read line
+case $line in
+"term")
+kill -SIGTERM $(cat lab4.7_PID)
+exit
+;;
+"+")
+kill -USR1 $(cat lab4.7_PID)
+;;
+"*")
+kill -USR2 $(cat lab4.7_PID)
+;;
+esac
+done

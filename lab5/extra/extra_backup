@@ -1,0 +1,30 @@
+#!/bin/bash
+cd /home/user
+homeDir=/home/user
+
+lastBackup="$(ls | grep -E "^Backup-" | sort -n | tail -1 | cut -d "-" -f 2)"
+
+dateNow="$(date +%s)"
+mkdir "Backup-$dateNow"
+
+cd $homeDir/source
+listInSource="$(ls)"
+cd $homeDir/Backup-$lastBackup
+
+for i in $listInSource
+do
+	if [ -f "$i" ]
+	then
+	sizeInSource="$(ls -l -- $homeDir/source/$i | awk '{print$5}')"
+	sizeInBackup="$(ls -l $i | awk '{print$5}')"
+		if [[ $sizeInSource -ne $sizeInBackup ]]
+		then 
+		cp -R -- $homeDir/source/$i $homeDir/Backup-$dateNow
+		echo $i "added to backup (changed)"
+		fi
+	else
+	cp -R $homeDir/source/$i $homeDir/Backup-$dateNow
+	echo $i "added to backup"
+	fi
+done
+

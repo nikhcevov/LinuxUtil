@@ -1,0 +1,28 @@
+#!/bin/bash
+
+fileName=$1
+homeTrash=/home/user/.trash
+homeLog=/home/user/trash.log
+
+#if only one arg -> true
+if [ $# -ne 1 ]; then
+	exit 1
+fi
+
+#if homeTrash dir isn`t exist then create
+if [ -d $homeTrash ]; then :
+else
+	mkdir $homeTrash
+fi
+
+#solid link is currentTrashFile with uniq name
+currentTrashFile=$(date +%s)
+ln $fileName "$homeTrash/$currentTrashFile"
+rm $fileName
+#and print to log file
+if [ -e $homeLog ];
+then :
+else
+	touch $homeLog
+fi
+echo "$PWD/$fileName:$currentTrashFile" >> $homeLog

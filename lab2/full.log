@@ -1,0 +1,154 @@
+	Warning:  warning, (EE) error, (NI) not implemented, (??) unknown.
+[   598.660] Warning:  Warning, couldn't open module vboxvideo
+[   598.674] Warning:  Falling back to old probe method for modesetting
+[   598.674] Warning:  Falling back to old probe method for fbdev
+[   598.855] Warning:  VESA(0): Unable to estimate virtual size
+[   598.855] Warning:  VESA(0): No valid modes left. Trying less strict filter...
+[   598.855] Warning:  VESA(0): Unable to estimate virtual size
+	(++) from command line, (!!) notice, Information:  informational,
+[   598.639] Information:  The server relies on udev to provide the list of input devices.
+[   598.639] Information:  Loader magic: 0x55e45a4be020
+[   598.639] Information:  Module ABI versions:
+[   598.644] Information:  LoadModule: "glx"
+[   598.645] Information:  Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[   598.659] Information:  Module glx: vendor="X.Org Foundation"
+[   598.659] Information:  LoadModule: "vboxvideo"
+[   598.660] Information:  UnloadModule: "vboxvideo"
+[   598.660] Information:  Unloading vboxvideo
+[   598.660] Information:  LoadModule: "modesetting"
+[   598.660] Information:  Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[   598.661] Information:  Module modesetting: vendor="X.Org Foundation"
+[   598.661] Information:  LoadModule: "fbdev"
+[   598.661] Information:  Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[   598.662] Information:  Module fbdev: vendor="X.Org Foundation"
+[   598.662] Information:  LoadModule: "vesa"
+[   598.662] Information:  Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[   598.663] Information:  Module vesa: vendor="X.Org Foundation"
+[   598.663] Information:  modesetting: Driver for Modesetting Kernel Drivers: kms
+[   598.663] Information:  FBDEV: driver for framebuffer: fbdev
+[   598.663] Information:  VESA: driver for VESA chipsets: vesa
+[   598.674] Information:  Loading sub module "fbdevhw"
+[   598.674] Information:  LoadModule: "fbdevhw"
+[   598.674] Information:  Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[   598.674] Information:  Module fbdevhw: vendor="X.Org Foundation"
+[   598.674] Information:  Loading sub module "fbdevhw"
+[   598.674] Information:  LoadModule: "fbdevhw"
+[   598.674] Information:  Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[   598.674] Information:  Module fbdevhw: vendor="X.Org Foundation"
+[   598.674] Information:  UnloadModule: "modesetting"
+[   598.674] Information:  UnloadModule: "fbdev"
+[   598.674] Information:  UnloadSubModule: "fbdevhw"
+[   598.674] Information:  Loading sub module "vbe"
+[   598.674] Information:  LoadModule: "vbe"
+[   598.674] Information:  Loading /usr/lib64/xorg/modules/libvbe.so
+[   598.676] Information:  Module vbe: vendor="X.Org Foundation"
+[   598.676] Information:  Loading sub module "int10"
+[   598.676] Information:  LoadModule: "int10"
+[   598.676] Information:  Loading /usr/lib64/xorg/modules/libint10.so
+[   598.677] Information:  Module int10: vendor="X.Org Foundation"
+[   598.677] Information:  VESA(0): initializing int10
+[   598.682] Information:  VESA(0): Primary V_BIOS segment is: 0xc000
+[   598.683] Information:  VESA(0): VESA BIOS detected
+[   598.683] Information:  VESA(0): VESA VBE Version 2.0
+[   598.683] Information:  VESA(0): VESA VBE Total Mem: 16384 kB
+[   598.683] Information:  VESA(0): VESA VBE OEM: VirtualBox VESA BIOS
+[   598.683] Information:  VESA(0): VESA VBE OEM Software Rev: 0.3
+[   598.683] Information:  VESA(0): VESA VBE OEM Vendor: Oracle Corporation
+[   598.683] Information:  VESA(0): VESA VBE OEM Product: Oracle VM VirtualBox VBE Adapter
+[   598.683] Information:  VESA(0): VESA VBE OEM Product Rev: Oracle VM VirtualBox Version 5.2.18
+[   598.785] Information:  VESA(0): Creating default Display subsection in Screen section
+[   598.785] Information:  Loading sub module "ddc"
+[   598.785] Information:  LoadModule: "ddc"
+[   598.785] Information:  Module "ddc" already built-in
+[   598.785] Information:  VESA(0): VESA VBE DDC not supported
+[   598.785] Information:  VESA(0): Searching for matching VESA mode(s):
+[   598.855] Information:  VESA(0): Total Memory: 256 64KB banks (16384kB)
+[   598.855] Information:  VESA(0): <default monitor>: Using default hsync range of 31.50-48.00 kHz
+[   598.855] Information:  VESA(0): <default monitor>: Using default vrefresh range of 50.00-70.00 Hz
+[   598.855] Information:  VESA(0): <default monitor>: Using default maximum pixel clock of 65.00 MHz
+[   598.855] Information:  VESA(0): Not using built-in mode "1600x1200" (no mode of this name)
+[   598.855] Information:  VESA(0): Not using built-in mode "1280x1024" (no mode of this name)
+[   598.855] Information:  VESA(0): Not using built-in mode "1152x864" (no mode of this name)
+[   598.855] Information:  VESA(0): Not using built-in mode "1024x768" (no mode of this name)
+[   598.855] Information:  VESA(0): Not using built-in mode "800x600" (no mode of this name)
+[   598.855] Information:  VESA(0): Not using built-in mode "640x480" (no mode of this name)
+[   598.855] Information:  VESA(0): Not using built-in mode "640x400" (no mode of this name)
+[   598.855] Information:  VESA(0): Not using built-in mode "320x200" (no mode of this name)
+[   598.855] Information:  VESA(0): <default monitor>: Using hsync range of 31.50-48.00 kHz
+[   598.855] Information:  VESA(0): <default monitor>: Using vrefresh range of 50.00-70.00 Hz
+[   598.855] Information:  VESA(0): <default monitor>: Using maximum pixel clock of 65.00 MHz
+[   598.855] Information:  VESA(0): Not using built-in mode "1600x1200" (hsync out of range)
+[   598.855] Information:  VESA(0): Not using built-in mode "1280x1024" (hsync out of range)
+[   598.855] Information:  VESA(0): Not using built-in mode "1152x864" (hsync out of range)
+[   598.855] Information:  VESA(0): Not using built-in mode "640x400" (hsync out of range)
+[   598.855] Information:  VESA(0): Not using built-in mode "320x200" (illegal horizontal timings)
+[   598.855] Information:  VESA(0): Attempting to use 60Hz refresh for mode "1024x768" (144)
+[   598.855] Information:  VESA(0): Attempting to use 60Hz refresh for mode "800x600" (143)
+[   598.855] Information:  VESA(0): Attempting to use 60Hz refresh for mode "640x480" (142)
+[   598.855] Information:  Loading sub module "fb"
+[   598.855] Information:  LoadModule: "fb"
+[   598.855] Information:  Loading /usr/lib64/xorg/modules/libfb.so
+[   598.857] Information:  Module fb: vendor="X.Org Foundation"
+[   598.857] Information:  Loading sub module "int10"
+[   598.857] Information:  LoadModule: "int10"
+[   598.857] Information:  Loading /usr/lib64/xorg/modules/libint10.so
+[   598.857] Information:  Module int10: vendor="X.Org Foundation"
+[   598.857] Information:  VESA(0): initializing int10
+[   598.859] Information:  VESA(0): Primary V_BIOS segment is: 0xc000
+[   598.860] Information:  VESA(0): VESA BIOS detected
+[   598.860] Information:  VESA(0): VESA VBE Version 2.0
+[   598.860] Information:  VESA(0): VESA VBE Total Mem: 16384 kB
+[   598.860] Information:  VESA(0): VESA VBE OEM: VirtualBox VESA BIOS
+[   598.860] Information:  VESA(0): VESA VBE OEM Software Rev: 0.3
+[   598.860] Information:  VESA(0): VESA VBE OEM Vendor: Oracle Corporation
+[   598.860] Information:  VESA(0): VESA VBE OEM Product: Oracle VM VirtualBox VBE Adapter
+[   598.860] Information:  VESA(0): VESA VBE OEM Product Rev: Oracle VM VirtualBox Version 5.2.18
+[   598.860] Information:  VESA(0): virtual address = 0x7f6981709000,
+[   598.914] Information:  VESA(0): Setting up VESA Mode 0x144 (1024x768)
+[   598.920] Information:  SELinux: Disabled by boolean
+[   598.922] Information:  AIGLX: Screen 0 is not DRI2 capable
+[   599.040] Information:  IGLX: enabled GLX_MESA_copy_sub_buffer
+[   599.041] Information:  IGLX: Loaded and initialized swrast
+[   599.041] Information:  GLX: Initialized DRISWRAST GL provider for screen 0
+[   599.119] Information:  config/udev: Adding input device Power Button (/dev/input/event0)
+[   599.119] Information:  LoadModule: "evdev"
+[   599.119] Information:  Loading /usr/lib64/xorg/modules/input/evdev_drv.so
+[   599.125] Information:  Module evdev: vendor="X.Org Foundation"
+[   599.125] Information:  Using input driver 'evdev' for 'Power Button'
+[   599.125] Information:  evdev: Power Button: Configuring as keyboard
+[   599.125] Information:  XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   599.127] Information:  config/udev: Adding input device Sleep Button (/dev/input/event1)
+[   599.127] Information:  Using input driver 'evdev' for 'Sleep Button'
+[   599.128] Information:  evdev: Sleep Button: Configuring as keyboard
+[   599.128] Information:  XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 7)
+[   599.129] Information:  config/udev: Adding input device Video Bus (/dev/input/event4)
+[   599.129] Information:  Using input driver 'evdev' for 'Video Bus'
+[   599.129] Information:  evdev: Video Bus: Configuring as keyboard
+[   599.129] Information:  XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[   599.130] Information:  config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event2)
+[   599.130] Information:  Using input driver 'evdev' for 'AT Translated Set 2 keyboard'
+[   599.130] Information:  evdev: AT Translated Set 2 keyboard: Configuring as keyboard
+[   599.130] Information:  XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 9)
+[   599.131] Information:  config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/event3)
+[   599.131] Information:  Using input driver 'evdev' for 'ImExPS/2 Generic Explorer Mouse'
+[   599.132] Information:  evdev: ImExPS/2 Generic Explorer Mouse: Configuring as mouse
+[   599.132] Information:  evdev: ImExPS/2 Generic Explorer Mouse: Adding scrollwheel support
+[   599.132] Information:  XINPUT: Adding extended input device "ImExPS/2 Generic Explorer Mouse" (type: MOUSE, id 10)
+[   599.132] Information:  evdev: ImExPS/2 Generic Explorer Mouse: initialized for relative axes.
+[   599.133] Information:  config/udev: Adding input device ImExPS/2 Generic Explorer Mouse (/dev/input/mouse0)
+[   599.133] Information:  No input driver specified, ignoring this device.
+[   599.133] Information:  This device may have been added with another device file.
+[   599.133] Information:  config/udev: Adding input device PC Speaker (/dev/input/event5)
+[   599.134] Information:  No input driver specified, ignoring this device.
+[   599.134] Information:  This device may have been added with another device file.
+[   628.098] Information:  evdev: ImExPS/2 Generic Explorer Mouse: Close
+[   628.098] Information:  UnloadModule: "evdev"
+[   628.098] Information:  evdev: AT Translated Set 2 keyboard: Close
+[   628.098] Information:  UnloadModule: "evdev"
+[   628.098] Information:  evdev: Video Bus: Close
+[   628.098] Information:  UnloadModule: "evdev"
+[   628.098] Information:  evdev: Sleep Button: Close
+[   628.098] Information:  UnloadModule: "evdev"
+[   628.098] Information:  evdev: Power Button: Close
+[   628.098] Information:  UnloadModule: "evdev"
+[   628.288] Information:  Server terminated successfully (0). Closing log file.

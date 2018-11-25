@@ -1,0 +1,24 @@
+#!/bin/bash
+echo $$ > extra_PID
+echo "RUNNING"
+i="type command"
+mode='0'
+sigterm()
+{
+mode='1'
+crontab -l | grep -v "lab4.1" | crontab -
+}
+trap 'sigterm' SIGTERM
+while true
+do
+case $mode in
+0)
+
+;;
+1)
+echo "STOP"
+exit
+;;
+esac
+sleep 1
+done

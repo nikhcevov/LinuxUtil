@@ -1,0 +1,13 @@
+#!/bin/bash
+./extra_handler&
+while true
+do
+read line
+case $line in
+"./lab4.3")
+echo "SEND TERM"
+kill -SIGTERM $(cat extra_PID)
+exit
+;;
+esac
+done

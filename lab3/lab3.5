@@ -1,0 +1,24 @@
+#!/bin/bash
+status=""
+for pid in $(ps -A -o pid | tail -n +2) 
+do
+statusFile="/proc/"$pid"/status"
+schedFile="/proc/"$pid"/sched"
+ppid=$(grep -E -h -s -i "ppid:\s(.+)" $statusFile | grep -o "[0-9]\+")
+#
+#find avg_atom as sum_exec_runtime/nr_switches
+#
+sum_exec_runtime=$(grep -E -s -h -i  "se.sum_exec_runtime" /proc/$pid/sched |grep -o "[0-9.]\+\$")
+nr_switches=$(grep -E -s -h -i  "nr_switches" /proc/$pid/sched |grep -o "[0-9]\+\$")
+if [[ -z $nr_switches ]]
+then avg_atom=-1
+else avg_atom=$(echo "scale=5; $sum_exec_runtime/$nr_switches" | bc -l | sed 's/^\./0./')
+fi
+#
+#print result
+#
+if [[ $ppid != "" ]]
+then status=$status"ProcessID="$pid" : Parent_ProcessID="$ppid" : Average_Sleeping_Time="$avg_atom$'\n'
+fi
+done
+echo "$status" | sort -t " " -k2 > lab3.5_output

@@ -1,0 +1,42 @@
+11:23:34,580 WARNING kernel:ACPI: RSDP 00000000000e0000 00024 (v02 VBOX  )
+11:23:34,580 WARNING kernel:ACPI: XSDT 000000007fff0030 0003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+11:23:34,580 WARNING kernel:ACPI: FACP 000000007fff00f0 000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+11:23:34,580 WARNING kernel:ACPI: DSDT 000000007fff0470 021FF (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+11:23:34,580 WARNING kernel:ACPI: FACS 000000007fff0200 00040
+11:23:34,580 WARNING kernel:ACPI: APIC 000000007fff0240 00054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+11:23:34,580 WARNING kernel:ACPI: SSDT 000000007fff02a0 001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+11:23:34,580 DEBUG kernel:ACPI: Local APIC address 0xfee00000
+11:23:34,580 INFO kernel:ACPI: PM-Timer IO Port: 0x4008
+11:23:34,580 DEBUG kernel:ACPI: Local APIC address 0xfee00000
+11:23:34,580 INFO kernel:ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+11:23:34,580 INFO kernel:ACPI: IOAPIC (id[0x01] address[0xfec00000] gsi_base[0])
+11:23:34,580 INFO kernel:ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+11:23:34,580 INFO kernel:ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+11:23:34,580 DEBUG kernel:ACPI: IRQ0 used by override.
+11:23:34,580 DEBUG kernel:ACPI: IRQ9 used by override.
+11:23:34,580 INFO kernel:ACPI: Core revision 20130517
+11:23:34,581 WARNING kernel:ACPI: All ACPI Tables successfully acquired
+11:23:34,581 INFO kernel:ACPI: bus type PCI registered
+11:23:34,581 INFO kernel:ACPI: Added _OSI(Module Device)
+11:23:34,581 INFO kernel:ACPI: Added _OSI(Processor Device)
+11:23:34,581 INFO kernel:ACPI: Added _OSI(3.0 _SCP Extensions)
+11:23:34,581 INFO kernel:ACPI: Added _OSI(Processor Aggregator Device)
+11:23:34,581 DEBUG kernel:ACPI: EC: Look up EC in DSDT
+11:23:34,581 WARNING kernel:ACPI: Executed 1 blocks of module-level executable AML code
+11:23:34,581 INFO kernel:ACPI: Interpreter enabled
+11:23:34,581 INFO kernel:ACPI: (supports S0 S5)
+11:23:34,581 INFO kernel:ACPI: Using IOAPIC for interrupt routing
+11:23:34,581 WARNING kernel:ACPI: Enabled 2 GPEs in block 00 to 07
+11:23:34,581 INFO kernel:ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+11:23:34,584 INFO kernel:ACPI: PCI Interrupt Link [LNKA] (IRQs 5 9 10 *11)
+11:23:34,584 INFO kernel:ACPI: PCI Interrupt Link [LNKB] (IRQs 5 9 *10 11)
+11:23:34,584 INFO kernel:ACPI: PCI Interrupt Link [LNKC] (IRQs 5 *9 10 11)
+11:23:34,584 INFO kernel:ACPI: PCI Interrupt Link [LNKD] (IRQs 5 9 10 *11)
+11:23:34,584 INFO kernel:ACPI: bus type USB registered
+11:23:34,584 INFO kernel:ACPI: bus type PNP registered
+11:23:34,584 INFO kernel:ACPI: bus type PNP unregistered
+11:23:34,585 INFO kernel:ACPI: AC Adapter [AC] (off-line)
+11:23:34,585 INFO kernel:ACPI: Power Button [PWRF]
+11:23:34,585 INFO kernel:ACPI: Sleep Button [SLPF]
+11:23:34,585 INFO kernel:ACPI: Battery Slot [BAT0] (battery present)
+11:23:38,390 INFO kernel:ACPI: Video Device [GFX0] (multi-head: yes  rom: no  post: no)

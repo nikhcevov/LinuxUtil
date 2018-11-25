@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "+" > lab4.5_stack_trace
+./lab4.5_handler& > lab4.5_stack_trace
+while true
+do
+read line
+if [[ $line == "QUIT" ]]
+then
+exit
+fi
+if [[ $line != '*' ]]
+then echo $line >> lab4.5_stack_trace
+else echo "M" >> lab4.5_stack_trace
+fi
+done

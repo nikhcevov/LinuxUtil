@@ -1,0 +1,3 @@
+#!/bin/bash
+template="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"
+grep -E -h -s -r -o -w $template /etc/* | awk '{printf("%s, \n", $1)}' | tail -10

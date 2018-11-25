@@ -1,0 +1,30 @@
+#!/bin/bash
+result=1
+operate='+'
+tail -n 0 -f lab4.5_stack_trace | 
+while true
+do
+read line
+case $line in
+'+')
+operate='+'
+echo "Sum mode"
+;;
+M)
+operate='*'
+echo "Multiply mode"
+;;
+[0-9]*)
+if [[ $operate == '+' ]]
+then
+let result=$result+$line
+else
+let result=$result\*$line
+fi
+echo "result $operate $line = $result"
+;;
+*)
+echo "wrong format"
+;;
+esac
+done

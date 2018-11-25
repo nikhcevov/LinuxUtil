@@ -1,0 +1,4 @@
+#!/bin/bash
+#a[2] - rezidentnaya; a[3] - razdelyaemaya in statm file 
+ps -A -o pid | tail -n +2 | gawk '{tmp="/proc/"$1"/statm";getline f<tmp;close (tmp);
+split(f, a);print $1, ":", a[2]-a[3]}' | tr -d " " | sort -r -n -t ":" -k2 > lab3.4_output
